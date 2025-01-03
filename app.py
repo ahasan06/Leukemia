@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 
 # Load the model
-MODEL_PATH = "student_model_distilled.h5"
+MODEL_PATH = "best_student_model.h5"
 model = load_model(MODEL_PATH)
 
 @app.route('/')
